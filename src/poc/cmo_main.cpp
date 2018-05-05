@@ -9,11 +9,9 @@
 
 template <typename T> int getCardinality(T n)
 {
-	int c = 1;
-	std::string str = std::to_string(n);
-	for(int i = 0; i < str.length(); i++) {
-		c *= 10;
-	} return c;
+	int c = 1; std::string str = std::to_string(n);
+	for(int i = 0; i < str.length(); i++) c *= 10;
+	return c;
 }
 
 int cmovalidate(int dc, int dcsg, int dcsgc)
